@@ -1,0 +1,478 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', arial;
+    
+}
+
+::selection {
+    color: #b950ff;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(245, 245, 245);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#b950ff;
+    border-radius: 2px;
+}
+
+/* Nav Section */
+
+.nv {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    padding: 10px 0;
+    transition: .4s  linear;
+    background-color: #02152e00;
+}
+
+.width {
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.nv .width {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width: 90px;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+    transition: linear 5s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+    transition: linear 5s;
+}
+
+.line {
+    background-color: #ffffff;
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    left: 270px;
+    top: 120px;
+}
+
+.line:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.line2 {
+    background-color: #ffffff;
+    width: 25px;
+    height: 5px;
+    position: absolute;
+    left: 270px;
+    top: 130px;
+}
+
+.line2:hover {
+    background-color: rgb(0, 0, 255);
+}
+
+.menu_nv a {
+    color: rgb(255, 5, 5);
+    font-size: 24px;
+    margin-left: 30px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+
+.menu_nv a:hover {
+    color: rgb(151, 13, 13);
+}
+
+.button {
+    background-color: honeydew;
+    width: 200px;
+    position: absolute;
+    left: 500px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(255, 255, 255, 0.089);
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    transition: linear .3s;
+}
+
+.button:hover {
+    background-color: rgb(175, 166, 253);
+    transition: linear .3s;
+    color: rgb(0, 0, 0);
+}
+
+/* Nav Section */
+
+#home {
+    padding: 1px;
+    min-height: 700px;
+    background-image: url(../img/wall.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 100px;
+    margin-bottom: 60px;
+    color: rgb(250, 250, 250);
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+#home .titulo h1::after{
+    content: "Exército";
+    animation: txt 10s linear infinite;
+}
+
+@keyframes txt {
+    50% {
+        content: "Exército Real";
+        color: rgb(255, 253, 109);
+    } 100% {
+        content: "Exército Real Brasileiro";
+        color: rgb(212, 253, 212);
+    }
+}
+
+.iw {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+/* Historinha */
+
+#sobre {
+    background-color: rgb(3, 11, 22);
+}
+
+h2 {
+    color:rgb(255, 255, 255);
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    padding-top: -20px;
+    margin: auto;
+}
+
+h2::before  {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(224, 224, 224);
+    bottom: 0;
+}
+
+.historia {
+    color: rgb(216, 183, 253);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ball {
+    position: absolute;
+    height: 800px;
+    width: 800px;
+    border-radius: 1000px;
+    background-color: rgb(255, 255, 255);
+    left: -400px;
+}
+
+.img {
+    position: absolute;
+    left: 25px;
+    transition: linear 2s;
+}
+
+.img:hover {
+    position: absolute;
+    left: 20px;
+    transition: linear 2s;
+    /*transform: rotate(360deg);*/
+}
+
+.htxt {
+    background-color: rgba(255, 255, 255, 0.089);
+    position: relative;
+    width: 800px;
+    right: -300px;
+    padding: 50px;
+    border-radius: 100px;
+}
+
+.htxt p {
+    padding:20px;
+    font-size: 20px;
+    text-align: justify;
+    margin: 5px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+footer {
+    margin-top: 10%;
+    padding: 100px;
+    background-image: url(../img/wall.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.social a{
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+}
+
+.social a:hover {
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social i{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+}
+
+.call i{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(168, 168, 168);
+    padding: 5px;
+} 
+
+@media screen and (max-width:1500px) {
+    .iw {
+        max-width: 800px;
+    }
+    .htxt {
+        width: 750px;
+        left: 130px;
+    }
+    .ball {
+        left: -470px;
+    }
+    .video{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .iw {
+        max-width: 800px;
+    }
+    .htxt {
+        width: 570px;
+        left: 160px;
+    }
+    .ball {
+        left: -520px;
+    }
+    .img {
+        left: -50px;
+        height: 90%;
+        top: 1000px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .iw {
+        max-width: 800px;
+    }
+
+    .htxt {
+        width: 550px;
+        left: 30px;
+    }
+
+    .ball {
+        top: 1200px;
+        left: -620px;
+    }
+
+    .acad {
+        width: calc(40% - 20px);
+    }
+
+    .project {
+        width: calc(40% -10px);
+    }
+
+    .call i {
+        width: calc(40% -10px);
+    }
+
+    .logo {
+        width: 90px;
+        position: absolute;
+        left: 80px;
+        top: 20px;
+    }
+    
+    .line {
+        background-color: #ffffff;
+        width: 50px;
+        height: 5px;
+        position: absolute;
+        left: 100px;
+        top: 120px;
+    }
+    
+    .line2 {
+        background-color: #ffffff;
+        width: 25px;
+        height: 5px;
+        position: absolute;
+        left: 100px;
+        top: 130px;
+    }
+
+    .img {
+        left: -50px;
+        height: 60%;
+        top: 1300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .iw {
+        max-width: 800px;
+    }
+
+    .htxt {
+        width: 120%;
+        left: 0px;
+    }
+
+    .ball {
+        top: 1200px;
+        left: -720px;
+    }
+
+    .acad {
+        width: 90%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .call i{
+        font-size: 17px;
+        width: 120%;
+        text-align: left;
+    }
+
+    .img {
+        left: -80px;
+        height: 60%;
+        top: 1350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .historia {
+        position: relative;
+        width: 450px;
+        left: 2px;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .htxt {
+        width: 200%;
+        left: 0px;
+    }
+
+    .ball {
+        top: 1250px;
+        left: -720px;
+    }
+
+    .video{
+        height: 100%;
+    }
+
+    .logo {
+        width: 85px;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    }
+    
+    .line {
+        background-color: #ffffff;
+        width: 50px;
+        height: 2.5px;
+        position: absolute;
+        left: 30px;
+        top: 120px;
+    }
+    
+    .line2 {
+        background-color: #ffffff;
+        width: 25px;
+        height: 2.5px;
+        position: absolute;
+        left: 30px;
+        top: 130px;
+    }
+    
+    .img {
+        display: none;
+    }
+
+    .ball {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .historia {
+        position: relative;
+        width: 385px;
+        left: 10px;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .htxt {
+        width: 800px;
+    }
+
+    .ball {
+        top: 1300px;
+        left: -720px;
+    }
+}

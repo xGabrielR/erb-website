@@ -399,6 +399,10 @@ footer {
         height: 60%;
         top: 1350px;
     }
+
+    .button {
+        left: 100px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -412,7 +416,7 @@ footer {
 
     .htxt {
         width: 200%;
-        left: 0px;
+        left: -10px;
     }
 
     .ball {
@@ -456,23 +460,20 @@ footer {
     .ball {
         display: none;
     }
+
+    .button {
+        left: 90px;
+        top: 1200px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .historia {
         position: relative;
         width: 385px;
-        left: 10px;
+        left: -12px;
         padding: 0;
         margin-top: 20px;
     }
-    
-    .htxt {
-        width: 800px;
-    }
 
-    .ball {
-        top: 1300px;
-        left: -720px;
-    }
 }
